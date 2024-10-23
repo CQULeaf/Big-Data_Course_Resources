@@ -11,7 +11,7 @@
 1. **对于操作系统**：近几年，CentOS停止维护 EOL（End of Life）后，阿里云同时停止对该操作系统的支持。故更***推荐使用Ubuntu 22.04 LTS***，目前最新最稳定最流行的Linux发行版，尤其适合我们学生进行大数据分析工作。
 2. **对于图形界面**：更推荐***不使用***图形化界面而直接使用命令行，这将节省大量服务器资源，而且更安全更稳定（图形界面会开放更多端口增加潜在的安全风险，还会因为兼容性问题或驱动更新导致崩溃）。如果对命令行操控不习惯，推荐使用辅助工具：***Xshell 7 与 Xftp 7***。
 3. **对于语言环境**：选用***OpenJDK 1.8.0***。
-4. **对于其它工具**：选用***Hadoop 3.3.6***以及***Spark 3.5.2***。
+4. **对于其它工具**：选用***Hadoop 3.3.6***以及***Spark 3.5.1***。
 
 此外，本项目还优化了原项目中的一些配置逻辑以简化配置复杂度。同样的，为了方便各位同学手动配置环境，本项目也提供了[保姆级环境配置指南](https://github.com/CQULeaf/Big-Data_Course_Resources/blob/main/Lab/Lab1_SettingUpEnv/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97.md)，建议配合[原项目实验指导书](https://github.com/Wanghui-Huang/CQU_bigdata/blob/master/Experiment/Ex1_SettingUpEnvironment/ex1.md)食用！
 
