@@ -1,0 +1,55 @@
+# Python缓存文件
+*.pyc
+__pycache__/
+
+# Django migration缓存文件（保留初始迁移文件，忽略后续生成的迁移缓存）
+handwrittenBoard/migrations/[0-9]*.py
+handwrittenBoard/migrations/__pycache__/
+
+# 环境文件和虚拟环境
+*.env
+.env
+*.venv
+*.virtualenv
+venv/
+ENV/
+env/
+.envrc
+
+# IDE配置文件
+.idea/
+.vscode/
+
+# macOS 特定文件
+.DS_Store
+
+# 数据库文件（假设使用SQLite或本地数据库）
+*.sqlite3
+*.db
+
+# 静态和媒体文件（如果静态文件和媒体文件是动态生成的）
+/static/
+/media/
+handwrittenBoard/static/
+/handwrittenBoard/media/
+
+# 日志文件
+*.log
+
+# 图片文件
+*.jpg
+*.jpeg
+*.png
+
+# 临时和备份文件
+*~
+*.swp
+*.swo
+
+# 敏感信息文件
+*.key
+*.pem
+
+# 临时的配置和缓存文件
+*.iml
+*.xml
