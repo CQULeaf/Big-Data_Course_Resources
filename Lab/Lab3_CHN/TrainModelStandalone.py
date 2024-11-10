@@ -10,9 +10,6 @@ import os
 # 配置 SparkConf 使用 yarn 模式
 conf = SparkConf() \
     .setAppName("CHN_STANDALONE")
-    # .set("spark.yarn.appMasterEnv.PYSPARK_PYTHON", "./big_data_lab_env/bin/python") \
-    # .set("spark.yarn.appMasterEnv.PYSPARK_DRIVER_PYTHON", "./big_data_lab_env/bin/python") \
-    # .set("spark.archives", "hdfs:///shared/envs/big_data_lab_env.tar.gz#big_data_lab_env")
 
 # 初始化 SparkSession
 spark = SparkSession.builder.config(conf=conf).getOrCreate()
