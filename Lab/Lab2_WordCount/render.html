@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="d6aaee514d1545128789d34de79e2211" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="c4e913ecb5a04153ba8613a6ec28ebfe" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_d6aaee514d1545128789d34de79e2211 = echarts.init(
-            document.getElementById('d6aaee514d1545128789d34de79e2211'), 'white', {renderer: 'canvas'});
-        var option_d6aaee514d1545128789d34de79e2211 = {
+        var chart_c4e913ecb5a04153ba8613a6ec28ebfe = echarts.init(
+            document.getElementById('c4e913ecb5a04153ba8613a6ec28ebfe'), 'white', {renderer: 'canvas'});
+        var option_c4e913ecb5a04153ba8613a6ec28ebfe = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -36,83 +36,134 @@
     ],
     "series": [
         {
-            "type": "scatter",
-            "name": "\u6b21\u6570",
-            "symbolSize": 10,
+            "type": "funnel",
             "data": [
-                [
-                    "\u8eab\u9ad8",
-                    360
-                ],
-                [
-                    "\u7236\u6bcd",
-                    348
-                ],
-                [
-                    "\u5bb6\u5ead",
-                    317
-                ],
-                [
-                    "\u7537\u751f",
-                    305
-                ],
-                [
-                    "\u5973\u751f",
-                    265
-                ],
-                [
-                    "\u670b\u53cb",
-                    264
-                ],
-                [
-                    "\u6027\u683c",
-                    240
-                ],
-                [
-                    "\u611f\u60c5",
-                    216
-                ],
-                [
-                    "\u6761\u4ef6",
-                    203
-                ],
-                [
-                    "\u65f6\u95f4",
-                    193
-                ],
-                [
-                    "\u672a\u6765",
-                    191
-                ],
-                [
-                    "\u5b66\u5386",
-                    184
-                ],
-                [
-                    "\u7ed3\u5a5a",
-                    181
-                ],
-                [
-                    "\u7537\u4eba",
-                    177
-                ],
-                [
-                    "\u5e74\u9f84",
-                    172
-                ]
+                {
+                    "name": "\u8eab\u9ad8",
+                    "value": 34.275
+                },
+                {
+                    "name": "\u5bb6\u5ead",
+                    "value": 31.4125
+                },
+                {
+                    "name": "\u7236\u6bcd",
+                    "value": 26.3
+                },
+                {
+                    "name": "\u6027\u683c",
+                    "value": 25.675
+                },
+                {
+                    "name": "\u670b\u53cb",
+                    "value": 21.35
+                },
+                {
+                    "name": "\u7537\u751f",
+                    "value": 20.875
+                },
+                {
+                    "name": "\u5b66\u5386",
+                    "value": 20.675
+                },
+                {
+                    "name": "\u6761\u4ef6",
+                    "value": 20.65
+                },
+                {
+                    "name": "\u5973\u751f",
+                    "value": 17.9
+                },
+                {
+                    "name": "\u611f\u60c5",
+                    "value": 15.9625
+                },
+                {
+                    "name": "\u65f6\u95f4",
+                    "value": 15.625
+                },
+                {
+                    "name": "\u604b\u7231",
+                    "value": 15.4125
+                },
+                {
+                    "name": "\u4f53\u91cd",
+                    "value": 14.875
+                },
+                {
+                    "name": "  ",
+                    "value": 14.7125
+                },
+                {
+                    "name": "\u5e74\u9f84",
+                    "value": 13.8875
+                }
             ],
+            "min": 0,
+            "max": 100,
+            "minSize": "0%",
+            "maxSize": "100%",
+            "orient": "vertical",
+            "sort": "descending",
+            "gap": 5,
+            "legendHoverLink": true,
+            "funnelAlign": "center",
             "label": {
                 "show": true,
-                "position": "right",
+                "position": "inside",
                 "margin": 8,
                 "valueAnimation": false
-            }
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "formatter": function(params) { return params.seriesName + '<br/>' + params.name + ' : ' + (params.value * 80).toFixed(2); },
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "itemStyle": {
+                "borderColor": "#fff",
+                "borderWidth": 1
+            },
+            "selectedMode": false,
+            "zlevel": 0,
+            "z": 2
         }
     ],
     "legend": [
         {
             "data": [
-                "\u6b21\u6570"
+                "\u604b\u7231",
+                "  ",
+                "\u5b66\u5386",
+                "\u8eab\u9ad8",
+                "\u7537\u751f",
+                "\u611f\u60c5",
+                "\u65f6\u95f4",
+                "\u6027\u683c",
+                "\u7236\u6bcd",
+                "\u670b\u53cb",
+                "\u4f53\u91cd",
+                "\u5973\u751f",
+                "\u5e74\u9f84",
+                "\u5bb6\u5ead",
+                "\u6761\u4ef6"
             ],
             "selected": {},
             "show": true,
@@ -158,89 +209,10 @@
         "padding": 5,
         "order": "seriesAsc"
     },
-    "xAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "animation": true,
-            "animationThreshold": 2000,
-            "animationDuration": 1000,
-            "animationEasing": "cubicOut",
-            "animationDelay": 0,
-            "animationDurationUpdate": 300,
-            "animationEasingUpdate": "cubicOut",
-            "animationDelayUpdate": 0,
-            "data": [
-                "\u8eab\u9ad8",
-                "\u7236\u6bcd",
-                "\u5bb6\u5ead",
-                "\u7537\u751f",
-                "\u5973\u751f",
-                "\u670b\u53cb",
-                "\u6027\u683c",
-                "\u611f\u60c5",
-                "\u6761\u4ef6",
-                "\u65f6\u95f4",
-                "\u672a\u6765",
-                "\u5b66\u5386",
-                "\u7ed3\u5a5a",
-                "\u7537\u4eba",
-                "\u5e74\u9f84"
-            ]
-        }
-    ],
-    "yAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "animation": true,
-            "animationThreshold": 2000,
-            "animationDuration": 1000,
-            "animationEasing": "cubicOut",
-            "animationDelay": 0,
-            "animationDurationUpdate": 300,
-            "animationEasingUpdate": "cubicOut",
-            "animationDelayUpdate": 0
-        }
-    ],
     "title": [
         {
             "show": true,
-            "text": "Scatter-VisualMap(Size)",
+            "text": "\u6f0f\u6597\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
@@ -249,31 +221,9 @@
             "textVerticalAlign": "auto",
             "triggerEvent": false
         }
-    ],
-    "visualMap": {
-        "show": true,
-        "type": "continuous",
-        "min": 20,
-        "max": 150,
-        "inRange": {
-            "symbolSize": [
-                20,
-                50
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 5,
-        "hoverLink": true,
-        "orient": "vertical",
-        "padding": 5,
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 140,
-        "borderWidth": 0
-    }
+    ]
 };
-        chart_d6aaee514d1545128789d34de79e2211.setOption(option_d6aaee514d1545128789d34de79e2211);
+        chart_c4e913ecb5a04153ba8613a6ec28ebfe.setOption(option_c4e913ecb5a04153ba8613a6ec28ebfe);
     </script>
 </body>
 </html>
